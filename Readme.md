@@ -4,6 +4,7 @@ A console-based RPS game written in C++ with three difficulty levels:
 - Easy (random)
 - Hard (adaptive Machine has a chance of cheating)
 - Impossible (Basically cheating)
+- Whatever the difficulty the Machine will try to destroy you "Emotionally"
 
 ## Features
 - Tracks user choices and adapts machine strategy

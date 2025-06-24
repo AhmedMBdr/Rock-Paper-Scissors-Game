@@ -99,9 +99,9 @@ void hard(const char& player_choice ,  int& count_player, int& count_machine , i
         }
         else {
             int random2 = rand()%100;
-            if(random2 < rock_prob) machine_choice = 'r';
-            else if ( random2 < rock_prob + paper_prob) machine_choice = 'p';
-            else machine_choice = 's';
+            if(random2 < rock_prob) machine_choice = 'p';
+            else if ( random2 < rock_prob + paper_prob) machine_choice = 's';
+            else machine_choice = 'r';
             cout << "You Chose : " << game2[player_choice] << "\n";
             cout << "The Machine Chose : " << game2[machine_choice] << "\n";
             state(player_choice , machine_choice , count_player , count_machine , games_played);

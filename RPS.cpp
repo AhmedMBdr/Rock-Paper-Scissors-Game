@@ -5,6 +5,8 @@
 #include <ctime>
 #include <fstream> 
 #include <vector>
+#include <chrono>
+#include <thread>
 using namespace std;
 typedef map<char , int>::iterator iter;
 map <char , int> game = {{'r' , 1} , {'p' , 1} , {'s' , 1} };
@@ -201,5 +203,11 @@ int main(){
     result << games_played << endl;
     result << times_player_won << endl;
     result << times_player_lost << endl;
+    for(int i = 0 ; i < 3 ; i++) {
+        short remaining = 3-i;
+        cout << "The Terminal will close in " << remaining << " Second" << (remaining == 1 ? "." : "s") << "....." << endl;
+        this_thread::sleep_for(chrono::seconds(1));
+    }
+
     return 0;
 }

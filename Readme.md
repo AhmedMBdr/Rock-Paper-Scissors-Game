@@ -18,3 +18,4 @@ Compile with any C++ compiler:
 - Basic use of File I/O , Data structure , ML and Statistics (primitive basic lmao)
 - First created game ever just do it
 - Didn't know what to do in license so picked MIT cause it sound cool
+- Hello
